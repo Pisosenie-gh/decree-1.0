@@ -11,7 +11,6 @@ from .decree_type import DecreeType
 class DecreeBase(BaseModel):
     content: str
     mainId: int
-    number: str
     date: date
 
 

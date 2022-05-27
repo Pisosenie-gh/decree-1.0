@@ -20,7 +20,7 @@ class Decree(Base):
     id = Column(Integer, primary_key=True, index=True)
     content = Column(VARCHAR(255))
     mainId = Column(Integer)
-    number = Column(VARCHAR(255))
+    number = Column(VARCHAR(255), nullable=True)
     date = Column(Date)
     isActive = Column(Integer, default=1, nullable=False)
     typeId = Column(Integer, ForeignKey('decree_type.id'))
